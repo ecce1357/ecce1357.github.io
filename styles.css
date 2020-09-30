@@ -47,7 +47,7 @@ li {
 
 .typewrite {
   color: black;
-  font-size: 10vw;
+  font-size: 8vh;
 }
 
 
@@ -90,13 +90,6 @@ li {
 }
 
 /* Title Sections */
-
-#name-title {
-  letter-spacing: 5px;
-  text-align: center;
-  font-size: 15vw;
-  font-weight: bold;
-}
 
 #subpage-title {
   text-align: left;
