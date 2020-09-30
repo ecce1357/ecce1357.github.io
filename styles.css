@@ -1,0 +1,188 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  color: #262626;
+}
+
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+
+#header {
+   padding:10vw 5vw 5vw;
+   text-align: center;
+}
+
+
+#body {
+   padding:5vw 2.5vw 10vw;   /* body div must have a bottom padding that is equal to (or slightly larger than) the height of the footer */
+}
+
+#footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:2vw;   /* Height of the footer */
+  text-align: center;
+  color: #808080;
+}
+
+.typewrite {
+  color: black;
+  font-size: 10vw;
+}
+
+
+/* Buttons */
+.home-icon {
+  position: absolute;
+  right: 50px;
+}
+
+/* Links */
+.subpage-links {
+  color: black;
+  font-style: italic;
+}
+
+.subpage-links:hover {
+  color: red;
+}
+
+.contact-links {
+  color: red;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: red;
+}
+
+.contact-links:hover {
+  color: black;
+}
+
+.subpage-row {
+  text-align: center;
+  padding: 4vw;
+}
+
+/* Navbar Section */
+
+#navbar {
+  padding: 6vw 2vw;
+}
+
+/* Title Sections */
+
+#name-title {
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 15vw;
+  font-weight: bold;
+}
+
+#subpage-title {
+  text-align: left;
+  padding-left: 2vw;
+  font-size: 3em;
+  color: red;
+}
+
+/* Tooltip Section */
+
+.hobbies-tooltip { /* Container for our tooltip */
+ position: relative;
+ display: inline-block;
+ border-bottom: 1px dotted red;
+}
+
+.hobbies-tooltip .hobbies-tooltip-text { /* This is for the tooltip text */
+ visibility: hidden;
+ width: 200px;
+ background-color: #262626;
+ color: white;
+ text-align: center;
+ font-size: 11px;
+ padding: 5px 10px;
+ border-radius: 10px; /* This defines tooltip text position */
+ bottom: 100%;
+ left: 50%;
+ margin-left: -100px; /* Use half of the width (200/2 = 100), to center the tooltip */
+ position: absolute;
+ z-index: 1;
+}
+
+.hobbies-tooltip:hover .hobbies-tooltip-text { /* Makes tooltip text visible when text is hovered on */
+ visibility: visible;
+}
+
+.hobbies-tooltip .hobbies-tooltip-text::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #262626 transparent transparent transparent;
+}
+
+
+  /* About Page Section*/
+
+.about-summary {
+    font-weight: 600;
+    text-align: left;
+  }
+
+.about-description {
+  text-align: justify;
+  width: 50vw;
+}
+
+
+  /* Hobbies Page Section */
+
+.hobbies-list {
+  text-align: left;
+}
+
+  /* Bucket Page Section */
+
+.bucket-title {
+    font-weight: 600;
+    padding-bottom: 2vw;
+  }
+
+.work-bucket {
+  padding-bottom: 8vw;
+}
+
+  /* Contact Page Section */
+
+#contact {
+  text-align: center;
+  padding-top: 4vw;
+}
+
+.contact-title {
+  color: red;
+  padding: 10px 0;
+}
